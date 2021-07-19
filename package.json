@@ -1,0 +1,41 @@
+{
+  "name": "react-custom-element-connector",
+  "version": "1.0.0",
+  "description": "A simple connector for custom elements that are used in react applications",
+  "main": "./lib/index.js",
+  "module": "./lib/index.module.js",
+  "system": "./lib/index.system.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthiasKainer/react-custom-element-connector.git"
+  },
+  "keywords": [
+    "custom-element",
+    "react"
+  ],
+  "author": "Matthias Kainer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthiasKainer/react-custom-element-connector/issues"
+  },
+  "homepage": "https://github.com/MatthiasKainer/react-custom-element-connector#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-commonjs": "^19.0.1",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "rollup": "^2.53.2",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
