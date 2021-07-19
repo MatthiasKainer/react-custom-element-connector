@@ -1,6 +1,6 @@
 {
   "name": "react-custom-element-connector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple connector for custom elements that are used in react applications",
   "main": "./lib/index.js",
   "module": "./lib/index.module.js",
