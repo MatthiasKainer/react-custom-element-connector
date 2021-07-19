@@ -97,6 +97,34 @@ test('Adds events to the original dom, without passing it to the element', () =>
     `);
     expect(console.error).toBeCalledTimes(0)
 })
+test('Supports children with slots', () => {
+    const knockknock = jest.fn()
+    const component = renderer.create(
+        <CustomElement
+            tag="hello-world"
+            whoIsThere="me"
+            knockknock={knockknock}>
+            <slot id="name">named slot</slot>
+            <slot>default slot</slot>
+        </CustomElement>,
+    );
+    let tree = component.toJSON();
+    expect(tree).toMatchInlineSnapshot(`
+    <hello-world
+      who-is-there="me"
+    >
+      <slot
+        id="name"
+      >
+        named slot
+      </slot>
+      <slot>
+        default slot
+      </slot>
+    </hello-world>
+    `);
+    expect(console.error).toBeCalledTimes(0)
+})
 
 test('Propagates the event correctly back to react', async () => {
     const knockknock = jest.fn()

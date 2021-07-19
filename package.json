@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest ./src"
   },
   "repository": {
     "type": "git",
